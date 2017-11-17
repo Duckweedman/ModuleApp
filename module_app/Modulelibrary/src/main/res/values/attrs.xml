@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonToolBar">
+        <attr name="title" format="string"/>
+        <attr name="bgTheme" format="enum">
+            <enum name="black" value="0"/>
+            <enum name="white" value="1"/>
+        </attr>
+        <attr name="right_title" format="string"/>
+        <attr name="right_img" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="SwipeItemLayout">
+        <attr name="layout_itemType">
+            <flag name="main" value="0x01"/>
+            <flag name="menu" value="0x02"/>
+        </attr>
+    </declare-styleable>
+</resources>

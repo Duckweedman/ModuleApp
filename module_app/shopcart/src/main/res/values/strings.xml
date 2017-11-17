@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShopCart</string>
+    <string name="shop_cart">购物车</string>
+    <string name="editor">编辑</string>
+    <string name="selectedall">全选</string>
+    <string name="total">合计</string>
+    <string name="unfreight">不含运费</string>
+    <string name="account">结算</string>
+    <string name="product_name">商品名称</string>
+    <string name="standard">规格参数</string>
+    <string name="no_store">已售罄</string>
+</resources>

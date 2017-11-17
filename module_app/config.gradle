@@ -1,0 +1,20 @@
+ext {
+    //统一环境配置
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.1",
+            minSdkVersion    : 14,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+            packageName      : "com.test.optimize",//当前项目包名（用于配置Jpush等)
+            jpushKey         : "46f48e95f095046fa421b71b",
+            isDebug          : "true",//是否调试模式
+            scheme           : "\"test\"",
+            baseUrl          : "\"http://xxx/\""//TODO:meiyizhi 项目域名
+
+    ]
+    dependencies = [
+            "supportVersion": "25.2.0"
+    ]
+}

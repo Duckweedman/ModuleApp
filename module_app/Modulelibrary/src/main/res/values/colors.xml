@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D43742</color>
+    <color name="colorPrimaryDark">#D43742</color>
+    <color name="colorAccent">#999999</color>
+    <!--主题色-->
+    <color name="theme_color">#FF6900</color>
+    <!--界面背景-->
+    <color name="main_bg">#e2e2e2</color>
+    <color name="black">#333333</color>
+    <color name="main_title_color">#333333</color>
+    <color name="sub_title_color">#666666</color>
+    <!--注释颜色，次级颜色-->
+    <color name="note_color">#999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transp_black_50">#30000000</color>
+</resources>
