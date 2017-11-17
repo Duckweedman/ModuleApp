@@ -5,7 +5,7 @@
 还有一些拓展，比如网络拦截器<br>
 模仿BaseRecyclerViewAdapterHelper做了简单的针对RecyclerView的适配器<br>
 针对MVP模式的统一优化<br>
-加入了JsBridge，后期补上hybrid自定义策略<br>
+加入hybrid策略<br>
 很可惜，多模块下，ButterKnife无法再使用了（大家有好方法的可以分享下）<br><br>
 #那么为什么用组件化得方式构建工程呢，现在Android独立开发的不少，一个module也没有问题吧<br>
 笔者的经历：<br>
