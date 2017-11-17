@@ -15,7 +15,7 @@ android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
     defaultConfig {
-        applicationId "com.taipu.optimize"
+        applicationId "com.test.optimize"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
@@ -41,9 +41,9 @@ android {
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
-                        // 输出apk名称为taipu_v版本_渠道.apk
+                        // 输出apk名称为test_v版本_渠道.apk
                         //_${releaseTime()}
-                        def fileName = "taipu_v${defaultConfig.versionName}_${releaseTime()}_test.apk"
+                        def fileName = "test_v${defaultConfig.versionName}_${releaseTime()}_test.apk"
                         output.outputFile = new File(outputFile.parent, fileName)
                     }
                 }

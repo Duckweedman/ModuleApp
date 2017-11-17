@@ -26,7 +26,7 @@ import cn.jpush.android.api.JPushInterface;
  * 2) 接收不到自定义消息
  */
 public class MyReceiver extends BroadcastReceiver {
-    private static final String TAG = "taipu_jpush";
+    private static final String TAG = "test_jpush";
 
     @Override
     public void onReceive(Context context, Intent intent) {

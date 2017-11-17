@@ -8,7 +8,7 @@ ext {
             versionCode      : 1,
             versionName      : "1.0.0",
             packageName      : "com.test.optimize",//当前项目包名（用于配置Jpush等)
-            jpushKey         : "46f48e95f095046fa421b71b",
+            jpushKey         : "xxxxxxxxxxxxxxx",
             isDebug          : "true",//是否调试模式
             scheme           : "\"test\"",
             baseUrl          : "\"http://xxx/\""//TODO:meiyizhi 项目域名

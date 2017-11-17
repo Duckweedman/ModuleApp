@@ -154,7 +154,7 @@
 -dontwarn cn.jpush.**
 -keep class Lcn.jpush.android.ui.**{*;}
 -keep class cn.jpush.** { *; }
--keep class com.didisteel.app.jpush.** { *; }
+-keep class com.test.functionlibrary.jpush.** { *; }
 -keep class * extends cn.jpush.android.helpers.JPushMessageReceiver { *; }
 
 -dontwarn cn.jiguang.**
