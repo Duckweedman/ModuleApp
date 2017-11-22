@@ -80,9 +80,6 @@ public class CartFragment extends BaseFragment implements View.OnClickListener {
         mShopRecycleview.setLayoutManager(new LinearLayoutManager(mActivity));
         mShopRecycleview.addOnItemTouchListener(new SwipeItemLayout.OnSwipeItemTouchListener(getContext()));
         mDatas = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            mDatas.add(new ShopCartBean());
-        }
         mCartShopAdapter = new CartShopAdapter(mDatas);
         mShopRecycleview.setAdapter(mCartShopAdapter);
         mShopRecycleview.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL));
@@ -103,7 +100,7 @@ public class CartFragment extends BaseFragment implements View.OnClickListener {
             CartCall.obtain().displayShoppingCart("1", new BaseApiSubscriber<ShopCartBean>() {
                 @Override
                 protected void onHandleSuccess(BaseBean<ShopCartBean> baseBean) {
-                    ToastUtil.toastShort(baseBean.data.memberId + "=memberid");
+                    ToastUtil.toastShort("memberid");
                 }
             });
         } else if (view.getId() == R.id.img_allselect) {//是否全选

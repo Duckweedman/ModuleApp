@@ -1,8 +1,10 @@
 package com.test.shopcart.cartnet;
 
 import com.test.modulebrary.base.BaseBean;
+import com.test.shopcart.bean.ShopCartBean;
 
 import io.reactivex.Observable;
+import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
@@ -14,4 +16,7 @@ import retrofit2.http.POST;
 public interface CartApiService {
     @POST("api/v1/shoppingcart/displayShoppingCart")
     Observable<BaseBean<Object>> displayShoppingCart(@Body String param);
+
+    @POST("api/v1/shoppingcart/displayShoppingCart")
+    Call<BaseBean<ShopCartBean>> displayShoppingCart2(@Body String param);
 }

@@ -4,6 +4,7 @@ import com.test.modulebrary.BaseApplication;
 import com.test.modulebrary.base.BaseBean;
 import com.test.modulebrary.network.BaseCall;
 import com.test.modulebrary.network.BaseApiSubscriber;
+import com.test.shopcart.bean.ShopCartBean;
 
 import java.util.HashMap;
 
@@ -43,8 +44,8 @@ public class CartCall extends BaseCall<CartApiService> {
     public void displayShoppingCart(String memberId, BaseApiSubscriber subscriber) {
         HashMap<String, String> params = new HashMap<>();
         params.put("memberId", memberId);
-        mService.displayShoppingCart(params.toString())
-                .compose(BaseApplication.getApplication().<BaseBean<Object>>bindToLifecycle())
+        loadForCache("shop_card", ShopCartBean.class,mService.displayShoppingCart2(params.toString()))
+                .compose(BaseApplication.getApplication().<BaseBean<ShopCartBean>>bindToLifecycle())
                 .subscribe(subscriber);
     }
 }

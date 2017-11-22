@@ -32,6 +32,7 @@ public class BaseApplication extends Application {
     private static Context sContext;
     private static BaseApplication sApplication;    // 全局Application对象
     private WeakReference<RxFragmentActivity> topActivity;    // 正在运行Activity的弱引用
+    private static String sROOT_PATH;
 
     /**
      * 单例方法
@@ -55,7 +56,15 @@ public class BaseApplication extends Application {
         super.onCreate();
         sContext = getApplicationContext();
         sApplication = this;
+        sROOT_PATH = getDir("test", MODE_PRIVATE).getAbsolutePath();
+        if (sROOT_PATH.endsWith("/")) {
+            sROOT_PATH += "/";
+        }
         registerActivityCallBack();
+    }
+
+    public static String getRootPath() {
+        return sROOT_PATH;
     }
 
     /**

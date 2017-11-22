@@ -30,12 +30,6 @@ public class CartShopAdapter extends BaseMultiItemQuickAdapter<ShopCartBean, Bas
         super(data);
         addItemType(CartConstant.SHOP, R.layout.item_cart_shop);
     }
-
-    @Override
-    public int getItemCount() {
-        return 10;
-    }
-
     @Override
     protected void convert(final BaseViewHolder helper, final ShopCartBean cartBean) {
         View editProductView = helper.getView(R.id.linear_editproduct_num);
